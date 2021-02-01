@@ -11,7 +11,9 @@ script:
   - npm run build
  
 deploy:
-  provider: pages
+  provider: heroku
+  api_key:
+    secure: "YOUR ENCRYPTED API KEY"
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   on:

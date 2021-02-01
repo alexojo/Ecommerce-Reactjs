@@ -13,7 +13,5 @@ deploy:
   provider: heroku
   api_key:
     secure: fe661b4b-d01b-4a6f-997c-6352c6f25bc9
+  app: ecommerce-react-unsaac1
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  on:
-    branch: master

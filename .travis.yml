@@ -12,6 +12,6 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: fe661b4b-d01b-4a6f-997c-6352c6f25bc9
-  app: ecommerce-react-unsaac1
+    secure: dae865e5-fb31-46ec-8bf6-d9550ca32177
+  app: e-commerce-uwunsaac
   skip-cleanup: true

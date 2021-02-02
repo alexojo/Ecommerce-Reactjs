@@ -11,7 +11,6 @@ script:
  
 deploy:
   provider: heroku
-  api_key:
-    secure: dae865e5-fb31-46ec-8bf6-d9550ca32177
+  api_key: $HEROKU_API_KEY
   app: e-commerce-uwunsaac
   skip-cleanup: true

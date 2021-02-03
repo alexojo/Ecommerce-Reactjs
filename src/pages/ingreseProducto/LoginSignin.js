@@ -59,25 +59,21 @@ export default class LoginSignin extends Component {
       console.log('valid fail');
       return
     }
-    if (this.props.title === 'Iniciar Sesion') {
-      const { email, password } = this.inputText
-      this.props.submitAction(email, password)
-        .then(res => {
+    
+    if (this.props.title === 'Registrar Producto') {
+      
+      //desestructurando los input
+      const { imagePath, title, description, price, color, size, quantity, department, category } = this.inputText
+      this.props.submitAction(imagePath, title, description, price, color, size, quantity, department, category)////////////////////
+        .then(res => {  
           jumpTo('/dashboard')
-          // console.log(res)
-          // console.log('loginsignin res');
-          return res
+          alert("PRODUCTO INGRESADO CORRECTAMENTE")
         })
         .catch(error => {
-          // console.log('loginsignin error')
-          // console.log(error.response)
-          alert(error.response.data.error.message)
+          alert(error)
           return error
         })
-    }
-    if (this.props.title === 'Registrar Producto') {
-      alert("ESO ES TODO AMIGOS 😥")
-      //window.location.href = 'https://www.youtube.com/watch?v=BtLSaxRnIhc';
+      
     }
   }
   render() {

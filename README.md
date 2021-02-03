@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/UwUnsaac/Ecommerce-Reactjs.svg?branch=master)](https://travis-ci.com/UwUnsaac/Ecommerce-Reactjs)
+
 # Full stack ecommerce online store application
 
 #### Online demo link (please send me an email)

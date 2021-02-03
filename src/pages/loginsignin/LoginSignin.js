@@ -10,7 +10,6 @@ export default class LoginSignin extends Component {
   constructor(props) {
     super(props)
     this.state = {}
-    this.algo = "algo"
     this.inputText = {}
     for (const input of props.INPUT_CONFIG) {
       this.state[input.name] = { errorMsg: '' }
@@ -87,6 +86,7 @@ export default class LoginSignin extends Component {
           return error
         })
     }
+    
   }
   render() {
     return (

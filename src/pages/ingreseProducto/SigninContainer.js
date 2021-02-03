@@ -1,13 +1,13 @@
-import Signin from './Signin'
+import Registro from './Signin'
 import { connect } from 'react-redux'
-import { signin } from '../../redux/action/signinAction'
+import { registro } from '../../redux/action/insertproductAction'
 
 const mapDispatchToProps = {
-  signin
+  registro
 }
 const mapStoreToProps = state => ({
   signin_loading: state.signin.signin_loading,
   signin_error: state.signin.error
 })
 
-export default connect(mapStoreToProps, mapDispatchToProps)(Signin)
+export default connect(mapStoreToProps, mapDispatchToProps)(Registro)

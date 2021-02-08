@@ -10,7 +10,7 @@ const btnStyle={
   width:'100%',
   height:'100%',
   borderRadius:'7px',
-  background:'rgb(0,100,255)',
+  background:'#680d0f',
   color:'white',
   fontFamily:'Roboto sans-serif',
   fontSize:'15px'

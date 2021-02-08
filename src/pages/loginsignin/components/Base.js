@@ -3,7 +3,7 @@ import React from 'react'
 import FormInput from './FormInput'
 import Button from './Button'
 import Footer from './footer'
-
+import Logo_UwUnsaac from '../../../assets/images/Logo_UwUnsaac.svg'
 export default function Base({
   title,
   inputs,
@@ -17,7 +17,9 @@ export default function Base({
 }) {
   return (
     <div className={styles.outbox}>
-      <div className={styles.logo}>Zack Market</div>
+      <div className={styles.logo}>
+      <img alt = 'logo' src={Logo_UwUnsaac}/>
+      </div>
       <div className={styles.title_style}>{title}</div>
       <div className={styles.border_style}></div>
       {

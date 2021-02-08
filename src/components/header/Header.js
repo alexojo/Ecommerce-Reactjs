@@ -7,6 +7,7 @@ import jumpTo,{go} from '../../modules/Navigation'
 import Auth from '../../modules/Auth'
 import device, { size } from '../../modules/mediaQuery'
 import MediaQuery from 'react-responsive'
+import Logo_UwUnsaac from '../../assets/images/Logo_UwUnsaac.svg'
 
 export default class Header extends Component {
   constructor(props) {
@@ -68,7 +69,7 @@ export default class Header extends Component {
                   jumpTo('/dashboard')
                 }}
               >
-                Zack Market
+                <img alt = 'logo' src={Logo_UwUnsaac} height="100px" width="120px"/>
               </div>
             </div>
             <div className={styles.mid}>
@@ -158,7 +159,7 @@ export default class Header extends Component {
                 jumpTo('/dashboard')
               }}
             >
-              Zack Market
+              <img alt = 'logo' src={Logo_UwUnsaac} height="100px" width="120px"/>
             </div>
           </div>
         </MediaQuery>

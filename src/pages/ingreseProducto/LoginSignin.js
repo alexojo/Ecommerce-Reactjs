@@ -67,7 +67,7 @@ export default class LoginSignin extends Component {
       this.props.submitAction(imagePath, title, description, price, color, size, quantity, department, category)////////////////////
         .then(res => {  
           jumpTo('/dashboard')
-          alert("PRODUCTO INGRESADO CORRECTAMENTE")
+          alert("PRODUCTO INGRESADO CORRECTAMENTEEE")
         })
         .catch(error => {
           alert(error)

@@ -6,6 +6,7 @@ import capitalizeString from '../utils/capitalizeString'
 export default function FormInput({
   title,
   name,
+  ejemplo,
   validations,
   errorMessage,
   onBlur,
@@ -23,7 +24,7 @@ export default function FormInput({
           type={'text'}
           name={name}
           /* texto que va en la parte interior del input como referencia */
-          placeholder={name}
+          placeholder={ejemplo}
           /* Ejecuta una funcion cuando el usuario abandona el campo de entrada*/
           onBlur={(e) => onBlur(e, validate(validations, e.target.value))}
            /* Ejecuta una funcion cuando el usuario se enfoca en el campo de entrada*/

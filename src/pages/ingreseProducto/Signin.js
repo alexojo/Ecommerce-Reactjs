@@ -13,45 +13,47 @@ const INPUT_CONFIG = [
   {
     title: "Nombre",
     name: "title",
-
+    ejemplo: "Ingresa tu producto completo",
   },
   {
     title: "Descripcion",
     name: "description",
-
+    ejemplo: "Ingresa la descripción de tu producto",
   },
   {
     title: "Link de la imagen",
     name: "imagePath",
-
+    ejemplo: "https://i.imgur.com/123as.jpg",
   },
   {
     title: "Tallas",
     name: "size",
+    ejemplo: "Ej. M, L, XL",
   },
   {
     title: "Precio",
     name: "price",
-
+    ejemplo: "Ej. 25.00 ",
   },
   {
     title: "Color",
     name: "color",
-
+    ejemplo: "Ej. Azul",
   },
   {
     title: "Cantidad",
     name: "quantity",
-
+    ejemplo: "Ej. 5",
   },
   {
     title: "Department",
     name: "department",
-
+    ejemplo: "Ej. Mujer , Varon ó Niños",
   },
   {
-    title: "Categoria",
+    title: "Hashtag",
     name: "category",
+    ejemplo: "Ej. #algodon #invierno #covid-19",
   },  
 ]
 

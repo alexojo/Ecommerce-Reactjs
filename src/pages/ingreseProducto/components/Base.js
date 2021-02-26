@@ -3,6 +3,8 @@ import React from 'react'
 import FormInput from './FormInput'
 import Button from './Button'
 import Footer from './footer'
+import InputTag from './InputTag'
+import ImageInput from './ImageInput'
 
 
 export default function Base({
@@ -36,6 +38,8 @@ export default function Base({
           />
         )
       }
+      <InputTag/>
+      <ImageInput/>
       <Button button_title={button_title} onClick={onSubmit} />
       <Footer content={footer_content} />
     </div>

@@ -1,14 +1,15 @@
-import React, { useRef, useState } from "react"
+import React, { useRef, useState, Component} from "react"
 import dropImageBg from "./image.svg"
 import axios from "axios"
 import UploadModal from "./UploadModal"
-
 import styles from '../stylesheets/imageInput.module.sass'
 
-const Dropzone = () => {
+
+var url = ""
+const Dropzone = (props) => {
     const [selectedFile, setSelectedFile] = useState(null)
     const [uploadedImageURL, setUploadedImageURL] = useState("")
-
+    
     const uploadModalRef = useRef()
     const uploadRef = useRef()
     const progressRef = useRef()
@@ -115,25 +116,25 @@ const Dropzone = () => {
                         const uploadPercentage = Math.floor(
                             (progressEvent.loaded / progressEvent.total) * 100
                         )
-                        uploadRef.current.innerHTML =
-                            "Tu archivo se cargo correctamente"
-                            setSelectedFile(null)
-
                     },
                 })
                 .then((res) => {
                     // In the response get the URL of the uploaded image
-                    const url = res.data.data.url
-                    alert(url);
+                    url = res.data.data.url
+                    // DEVUELVE URL DE LA IMAGEN SUBIDA
+                    //alert(url);
                     setUploadedImageURL(url)
+                    console.log(url)
+
                 })
                 .catch((error) => {
                     console.error(error.message)
                     // If theres an error display the message on the modal
                     uploadModalRef.current.innerHTML = `<span class="error">Error uploading file</span>`
                     // set progress to red
-                    progressRef.current.style.backgroundColor = "red"
+                    //progressRef.current.style.backgroundColor = "red"
                 })
+            
         } else {
             alert("You have to drop/select an image in order to upload.")
         }
@@ -172,9 +173,12 @@ const Dropzone = () => {
                     </div>
                 )}
             </div>
-            <button className={styles.upload_button} onClick={() => uploadFile()}>
-                Subir
-            </button>
+            <div className={styles.cont_button}>
+                <button className={styles.upload_button} onClick={() => uploadFile()}>
+                    Subir Imagen
+                </button>
+            </div>
+            
             <UploadModal
                 uploadModalRef={uploadModalRef}
                 uploadRef={uploadRef}
@@ -185,4 +189,4 @@ const Dropzone = () => {
     )
 }
 
-export default Dropzone
+export {Dropzone,url}

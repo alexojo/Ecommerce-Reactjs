@@ -13,17 +13,12 @@ const INPUT_CONFIG = [
   {
     title: "Nombre",
     name: "title",
-    ejemplo: "Ingresa tu producto completo",
+    ejemplo: "Ingresa el nombre de tu producto",
   },
   {
     title: "Descripcion",
     name: "description",
     ejemplo: "Ingresa la descripción de tu producto",
-  },
-  {
-    title: "Link de la imagen",
-    name: "imagePath",
-    ejemplo: "https://i.imgur.com/123as.jpg",
   },
   {
     title: "Tallas",
@@ -39,11 +34,6 @@ const INPUT_CONFIG = [
     title: "Color",
     name: "color",
     ejemplo: "Ej. Azul",
-  },
-  {
-    title: "Cantidad",
-    name: "quantity",
-    ejemplo: "Ej. 5",
   },
   {
     title: "Department",

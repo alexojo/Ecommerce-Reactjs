@@ -15,15 +15,14 @@ const UploadModal = ({
     }
     return (
         <div>
-            <div className='upload-modal' ref={uploadModalRef}>
-                                
+            <div className='upload-modal' ref={uploadModalRef}>                
                 <div className='uploaded-image-container'>
                     {uploadedImageURL && (
                         <img
                             src={uploadedImageURL}
                             alt='uploaded result'
-                            width='100px'
-                            height='100px'
+                            width='310px'
+                            height='auto'
                             loading='eager'
                         />
                     )}

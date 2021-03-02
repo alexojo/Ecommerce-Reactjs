@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React, { useRef, useState, Component} from "react"
 import styles from '../stylesheets/InputTag.sass'
 
-
-
-const TagsInput = props => {
+var array_tags=[]
+const TagsInput = (props) => {
 	const [tags, setTags] = React.useState(props.tags);
 	const removeTags = indexToRemove => {
 		setTags([...tags.filter((_, index) => index !== indexToRemove)]);
@@ -15,6 +14,14 @@ const TagsInput = props => {
 			event.target.value = "";
 		}
 	};
+	array_tags=[]
+	tags.map((tag)=>{
+		array_tags.push(tag)
+	})
+	console.log(array_tags)
+
+
+	
 	return (
 		<div className="tags-input">
 			<ul id="tags">
@@ -26,6 +33,7 @@ const TagsInput = props => {
 						>
 							x
 						</span>
+						
 					</li>
 				))}
 			</ul>
@@ -33,7 +41,7 @@ const TagsInput = props => {
 				type="text"
 				onKeyUp={event => event.key === "Enter" ? addTags(event) : null}
 				placeholder="Ingresa los tags de tu producto"
-			/>
+			/>		
 		</div>
 	);
 };
@@ -52,5 +60,5 @@ const InputTag = () => {
 	);
 };
 
-export default InputTag
+export {InputTag,array_tags}
 

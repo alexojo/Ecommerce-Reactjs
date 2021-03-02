@@ -69,7 +69,7 @@ export default class ProductOverview extends Component {
                     {this.props.product.description}
                   </div>
                   <div className={styles.price}>
-                    ${this.props.product.price} CAD
+                    S/.{this.props.product.price} PEN
                   </div>
                   {/* dotted border */}
                   <div className={styles.border}></div>

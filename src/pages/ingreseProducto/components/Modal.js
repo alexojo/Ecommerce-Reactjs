@@ -12,28 +12,10 @@ import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 
 
-const outStyle={
-  width:'80%',
-  height:'30px',
-  marginBottom:'10px',
-  marginTop:'20px'
-}
-const btnStyle={
-  width:'100%',
-  height:'100%',
-  borderRadius:'7px',
-  background:'#680d0f',
-  color:'white',
-  fontFamily:'Roboto sans-serif',
-  fontSize:'15px'
-}
-
-export default function Boton({ button_title,onClick}) {
+export default function Modal() {
   const [open, setOpen] = React.useState(false);
+  setOpen(true);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
 
   const handleClose = () => {
     setOpen(false);
@@ -73,13 +55,8 @@ export default function Boton({ button_title,onClick}) {
   function valuetext(value) {
     return `${value}°C`;
   }
-
-
-
   return (
-    <div className="forminput_button" style={outStyle}>
-      <input type="button" value={button_title} style={btnStyle} onClick={onClick}/>
-      
+    <div className="forminput_button">
       <Dialog
         open={open}
         onClose={handleClose}
@@ -112,8 +89,6 @@ export default function Boton({ button_title,onClick}) {
         </DialogActions>
       </Dialog>
 
-    </div>
-    
-    
+    </div> 
   )
 }

@@ -11,3 +11,4 @@ export const go=(uri)=>{
   history.go(uri)
 }
 export default jumpTo
+

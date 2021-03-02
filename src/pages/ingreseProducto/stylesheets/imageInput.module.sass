@@ -21,14 +21,23 @@
     opacity: 70%
     width: 100px
 
-.upload_button 
+.cont_button
+    display: flex
+    justify-content: center
+    align-items: center
+
+.upload_button
+    margin-top: 5px
+    margin-bottom: 5px
     color: white
     outline: none
-    padding: 0.8rem 1.5rem
+    padding: 0px 10px
     border: none
-    border-radius: 10px
+    border-radius: 5px
     cursor: pointer
-    background: #28a745
+    background: grey
+    font-size: 14px
+    
 
 
 
@@ -69,14 +78,15 @@
     color: #fff
     background: #0080c8
     text-transform: uppercase
+    margin-top: 23px
 
 
 .file_name 
     display: inline-block
     vertical-align: top
     margin-left: 50px
-    color: #4aa1f3;
-
+    color: red
+    font-size: 12px
 
 .file_error 
     display: inline-block
@@ -90,8 +100,8 @@
 
 
 .file_type_logo 
-    width: 50px
-    height: 50px
+    width: 40px
+    height: 40px
     background: url("./File_Explorer.png") no-repeat center center
     background-size: 100%
     position: absolute
@@ -100,18 +110,17 @@
 .file_size 
     display: inline-block
     vertical-align: top
-    color: #30693d
     margin-left: 10px
     margin-right: 5px
     margin-left: 10px
     color: #444242
     font-weight: 700
-    font-size: 14px
+    font-size: 12px
 
 
 .file_remove 
     position: absolute
-    top: 20px
+    top: 18px
     right: 10px
     line-height: 15px
     cursor: pointer

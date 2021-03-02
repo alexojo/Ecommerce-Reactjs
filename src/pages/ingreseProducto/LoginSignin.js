@@ -1,13 +1,19 @@
-import React, { Component } from 'react'
+import React, { useRef, useState, Component} from "react"
 import styles from './stylesheets/loginsignin.module.sass'
 import Base from './components/Base'
 import capitalizeString from './utils/capitalizeString'
 import jumpTo from '../../modules/Navigation'
 import LoadingAnimation from '../../components/loadingAnimation'
 import Header from '../../components/header/headerContainer'
+import {url} from "./components/Dropzone"
+
+
+
 
 
 export default class LoginSignin extends Component {
+    
+
   constructor(props) {
     super(props)
     this.state = {}
@@ -63,9 +69,9 @@ export default class LoginSignin extends Component {
     if (this.props.title === 'Registrar Producto') {
       
       //desestructurando los input
-      const { imagePath, title, description, price, color, size, quantity, department, category } = this.inputText
-      this.props.submitAction(imagePath, title, description, price, color, size, quantity, department, category)////////////////////
-        .then(res => {  
+      const {title, description, price, color, size, department, category } = this.inputText
+      this.props.submitAction(url, title, description, price, color, size, department, category)////////////////////
+        .then(res => {
           jumpTo('/dashboard')
           alert("GRACIAS POR CONFIAR EN NOSOTROS")
         })
@@ -101,7 +107,9 @@ export default class LoginSignin extends Component {
               </div>
             }
           />
+
         </div>
+        
       </div>
     )
   }

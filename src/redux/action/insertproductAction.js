@@ -1,7 +1,7 @@
 
 import serverCall from '../../modules/serverCall'
 
-export const registro=(imagePath, title, description, price, color, size, quantity, department, category)=>dispatch=>{
+export const registro=(imagePath, title, description, price, color, size, department, category)=>dispatch=>{
   dispatch({
     type: POST_REGISTRO_BEGIN,
   })
@@ -9,7 +9,7 @@ export const registro=(imagePath, title, description, price, color, size, quanti
     method:'POST',
     url:'/ingresoproducts',
     data:{
-      imagePath, title, description, price, color, size, quantity, department, category
+      imagePath, title, description, price, color, size, department, category
     }
   })
   .then(res=>{

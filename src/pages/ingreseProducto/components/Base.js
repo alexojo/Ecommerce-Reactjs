@@ -1,11 +1,12 @@
+
 import styles from '../stylesheets/base.module.sass'
 import React from 'react'
 import FormInput from './FormInput'
-import Button from './Button'
+import Boton from './Button'
 import Footer from './footer'
-import InputTag from './InputTag'
+import {InputTag} from './InputTag'
 import ImageInput from './ImageInput'
-
+import Upload from './Upload'
 
 export default function Base({
   title,
@@ -39,9 +40,10 @@ export default function Base({
         )
       }
       <InputTag/>
-      <ImageInput/>
-      <Button button_title={button_title} onClick={onSubmit} />
+      <Upload />
+      <Boton button_title={button_title} onClick={onSubmit} />
       <Footer content={footer_content} />
+      
     </div>
   )
 }

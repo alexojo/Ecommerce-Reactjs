@@ -6,7 +6,7 @@ import jumpTo from '../../modules/Navigation'
 import LoadingAnimation from '../../components/loadingAnimation'
 import Header from '../../components/header/headerContainer'
 import {url} from "./components/Dropzone"
-
+import {Pregunta1, Pregunta2} from "./components/Button"
 
 
 
@@ -72,8 +72,9 @@ export default class LoginSignin extends Component {
       const {title, description, price, color, size, department, category } = this.inputText
       this.props.submitAction(url, title, description, price, color, size, department, category)////////////////////
         .then(res => {
-          jumpTo('/dashboard')
-          alert("GRACIAS POR CONFIAR EN NOSOTROS")
+          
+          console.log(Pregunta1);
+          console.log(Pregunta2);
         })
         .catch(error => {
           alert(error)

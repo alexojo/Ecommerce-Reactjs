@@ -6,10 +6,17 @@ import Slider from '@material-ui/core/Slider';
 
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
+import Grid from '@material-ui/core/Grid';
+
+import jumpTo from '../../../modules/Navigation';
+
+import styles from '../stylesheets/Modal.sass'
+
+
+// A exportar
+var Pregunta1=[];
+var Pregunta2=[];
+
 
 
 const outStyle={
@@ -28,18 +35,39 @@ const btnStyle={
   fontSize:'15px'
 }
 
-export default function Boton({ button_title,onClick}) {
+function Boton({ button_title,onClick}) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
   };
-
+  const aux = () =>{
+    onClick();
+  }
   const handleClose = () => {
     setOpen(false);
+    //aux();
+    jumpTo('/dashboard')
   };
 
-  const marks = [
+  const Preguntas = [
+    {
+      Id: 'G_01',
+      encabezado: 'Mientras usaba el producto...',    
+      preguntaI: '...actue deliberadamente',
+      preguntaF: '...actue impulsivamente'
+  
+    },
+    {
+      Id: 'E_01',
+      encabezado: 'Mientras usaba el producto...', 
+      preguntaI: '...me tomo demasiado esfuerzo alcanzar mi objetivo',
+      preguntaF: '...alcance mi objetivo sin esfuerzo',
+    },
+  ]
+  
+
+  const numeros = [
     {
       value: 1,
       label: '1',
@@ -74,46 +102,88 @@ export default function Boton({ button_title,onClick}) {
     return `${value}°C`;
   }
 
+  
+  const [valor, setValor]=useState(0)
+  const handleValor =(event, newValue)=>{
+    setValor(newValue);
+    
+  }
+  const [valor2, setValor2]=useState(0)
 
+  const handleValor2 =(event, newValue)=>{
+    setValor2(newValue);
+  }
+  Pregunta1[0]=valor;
+  Pregunta2[0]=valor2;
+  Pregunta1[1]=Preguntas[0].Id;
+  Pregunta2[1]=Preguntas[1].Id;
+
+ 
 
   return (
     <div className="forminput_button" style={outStyle}>
-      <input type="button" value={button_title} style={btnStyle} onClick={onClick}/>
-      
-      <Dialog
+      <input type="button" value={button_title} style={btnStyle} onClick={()=>{handleClickOpen()}}/>
+
+      <Dialog    
         open={open}
         onClose={handleClose}
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"CUESTIONARIO"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Ayúdenos a seguir mejorando
-          </DialogContentText>
-          <Slider
-        defaultValue={1}
-        getAriaValueText={valuetext}
-        aria-labelledby="discrete-slider"
-        valueLabelDisplay="auto"
-        step={1}
-        marks={marks}
-        min={1}
-        max={7}
-        />
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Disagree
-          </Button>
+        <div className={styles.contenido} >
+          <h3>AYUDANOS A SEGUIR MEJORANDO!</h3>
+
+          <Typography id="discrete-slider" gutterBottom>
+            Cuando estaba utilizando el producto:
+          </Typography>
+          
+          <div style={{display: 'flex',justifyContent: "space-between",flexDirection: 'row', minWidth: 600+'px'}}>
+            <Typography
+            style={{width:100+'px'}}
+            >{Preguntas[0].preguntaI}</Typography>
+            <Slider style={{width:200+'px'}}
+              defaultValue={0}
+              getAriaValueText={valuetext}
+              aria-labelledby="discrete-slider"
+              valueLabelDisplay="auto"
+              onChange={handleValor}
+              step={1}
+              marks = {numeros}
+              min={0}
+              max={7}
+            />
+            <Typography style={{width:100+'px'}}>{Preguntas[0].preguntaF}</Typography>
+          </div>
+
+          <Typography id="discrete-slider" gutterBottom>
+            Cuando estaba utilizando el producto:
+          </Typography>
+
+          <div style={{display: 'flex',justifyContent: "space-between", flexDirection: 'row', minWidth: 600+'px'}}>
+            <Typography style={{width:100+'px'}}>{Preguntas[1].preguntaI}</Typography>
+            <Slider style={{width:200+'px'}}
+              defaultValue={0}
+              getAriaValueText={valuetext}
+              aria-labelledby="discrete-slider"
+              valueLabelDisplay="auto"
+              onChange={handleValor2}
+              step={1}
+              marks = {numeros}
+              min={0}
+              max={7}
+            />
+            <Typography style={{width:100+'px'}}>{Preguntas[1].preguntaF}</Typography>
+          </div>
+
           <Button onClick={handleClose} color="primary" autoFocus>
             Agree
           </Button>
-        </DialogActions>
+        </div>
+        
       </Dialog>
 
     </div>
     
-    
   )
 }
+export {Boton, Pregunta1, Pregunta2}

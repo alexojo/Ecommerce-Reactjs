@@ -136,7 +136,7 @@ const Dropzone = (props) => {
                 })
             
         } else {
-            alert("You have to drop/select an image in order to upload.")
+            alert("Tienes que soltar / seleccionar una imagen para poder subirla.")
         }
     }
 
@@ -150,7 +150,7 @@ const Dropzone = (props) => {
                 onDrop={fileDrop}
             >
                 <img className={styles.imgupload} src={dropImageBg} alt='drop content' width="100px" height="100px"/>
-                <p>Arrastra y suelta tu imagen</p>
+                <p>Arrastra la imagen de tu producto aquí</p>
             </div>
             <div className={styles.file_display_container}>
                 {selectedFile && (
@@ -161,7 +161,7 @@ const Dropzone = (props) => {
                                 {fileType(selectedFile.name)}
                             </div>
                             <span className={styles.file_name}>
-                                {selectedFile.name}
+                                producto.jpg
                             </span>
                             <span className={styles.file_size}>
                                 {fileSize(selectedFile.size)}
@@ -174,6 +174,7 @@ const Dropzone = (props) => {
                 )}
             </div>
             <div className={styles.cont_button}>
+                
                 <button className={styles.upload_button} onClick={() => uploadFile()}>
                     Subir Imagen
                 </button>

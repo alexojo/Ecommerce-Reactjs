@@ -9,7 +9,7 @@ export default function Sizes({ sizes, selectedSize, clickSize }) {
           ? sizes.slice(1).map(s =>
             <Dropdown.Item className={styles.item} onClick={() => clickSize(s)} key={s}>{s}</Dropdown.Item>
           )
-          : "no more sizes"
+          : "no más tallas"
         }
       </DropdownButton>
     </div>

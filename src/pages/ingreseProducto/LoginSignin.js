@@ -7,7 +7,7 @@ import LoadingAnimation from '../../components/loadingAnimation'
 import Header from '../../components/header/headerContainer'
 import {url} from "./components/Dropzone"
 import {Pregunta1, Pregunta2} from "./components/Button"
-
+import {array_tags} from "./components/InputTag"
 
 
 
@@ -70,11 +70,11 @@ export default class LoginSignin extends Component {
       
       //desestructurando los input
       const {title, description, price, color, size, department, category } = this.inputText
-      this.props.submitAction(url, title, description, price, color, size, department, category)////////////////////
+      this.props.submitAction(url, title, description, price, color, size, array_tags, Pregunta1, Pregunta2)////////////////////
         .then(res => {
-          
-          console.log(Pregunta1);
-          console.log(Pregunta2);
+          //console.log(array_tags);
+          //console.log(Pregunta1);
+          //console.log(Pregunta2);
         })
         .catch(error => {
           alert(error)

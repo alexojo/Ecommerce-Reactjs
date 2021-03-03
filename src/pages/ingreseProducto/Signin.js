@@ -35,7 +35,7 @@ const INPUT_CONFIG = [
     name: "color",
     ejemplo: "Ej. Azul",
   },
-  {
+  /*{
     title: "Department",
     name: "department",
     ejemplo: "Ej. Mujer , Varon ó Niños",
@@ -44,7 +44,7 @@ const INPUT_CONFIG = [
     title: "Hashtag",
     name: "category",
     ejemplo: "Ej. #algodon #invierno #covid-19",
-  },  
+  },*/ 
 ]
 
 

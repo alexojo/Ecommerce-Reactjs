@@ -19,6 +19,10 @@ export default function Base({
   button_title,
   footer_content
 }) {
+  const auxiliar = Math.round(Math.random() * (16 - 0) + 0);
+
+  const indice1 = auxiliar;
+  const indice2 = auxiliar==16? 0 : (auxiliar+1);
   return (
     <div className={styles.outbox}>
       
@@ -41,7 +45,7 @@ export default function Base({
       }
       <InputTag/>
       <Upload />
-      <Boton button_title={button_title} onClick={onSubmit} />
+      <Boton button_title={button_title} onClick={onSubmit} indice1={indice1} indice2={indice2} />
       <Footer content={footer_content} />
       
     </div>

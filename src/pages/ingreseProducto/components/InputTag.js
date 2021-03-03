@@ -1,7 +1,7 @@
 import React, { useRef, useState, Component} from "react"
 import styles from '../stylesheets/InputTag.sass'
 
-var array_tags=[]
+var array_tags=[];
 const TagsInput = (props) => {
 	const [tags, setTags] = React.useState(props.tags);
 	const removeTags = indexToRemove => {
@@ -18,7 +18,7 @@ const TagsInput = (props) => {
 	tags.map((tag)=>{
 		array_tags.push(tag)
 	})
-	console.log(array_tags)
+	//console.log(array_tags)
 
 
 	
@@ -50,7 +50,7 @@ const InputTag = () => {
 	const selectedTags = tags => {
 		console.log(tags);
 	};
-	const Tags=['ropa'];
+	const Tags=['varon','polo'];
 	return (
         
 		<div className={styles.contenedor}>

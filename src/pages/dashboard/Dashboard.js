@@ -41,8 +41,8 @@ export default class Dashboard extends Component {
                 onClick={() => this.props.history.push(`/product-overview/${p._id}`)}>
                 <Product
                   title={p.title}
-                  price={`S/.${p.price} PEN`}
-                  color={p.color}
+                  price={`S/.${p.price}`}
+
                   image={p.imagePath}
                 />
               </div>

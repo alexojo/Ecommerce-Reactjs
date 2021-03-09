@@ -69,7 +69,10 @@ export default class ProductOverview extends Component {
                     {this.props.product.description}
                   </div>
                   <div className={styles.price}>
-                    S/.{this.props.product.price} PEN
+                    S/.{this.props.product.price}
+                  </div>
+                  <div className={styles.contacto}>
+                    Número de contacto:  {this.props.product.cellphone}
                   </div>
                   {/* dotted border */}
                   <div className={styles.border}></div>

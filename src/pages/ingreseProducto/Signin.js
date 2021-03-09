@@ -35,6 +35,11 @@ const INPUT_CONFIG = [
     name: "color",
     ejemplo: "Ej. Azul",
   },
+  {
+    title: "Número de Contacto",
+    name: "cellphone",
+    ejemplo: "Ej. +51 934213123",
+  },
   /*{
     title: "Department",
     name: "department",

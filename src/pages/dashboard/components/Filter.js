@@ -74,7 +74,7 @@ export default class Filter extends Component {
           <div className={styles.title_border}></div>
               </div>
               <div className={styles.content}>
-                {/* order */}
+                {/* order 
                 <div className={styles.block}>
                   <div className={styles.sub_title}>
                     ORDEN
@@ -89,8 +89,10 @@ export default class Filter extends Component {
                     />
                   )}
                 </div>
-                {/* department */}
-                <div className={styles.block}>
+                */}
+                
+                {/*{/* department */}
+                {/*<div className={styles.block}>
                   <div className={styles.sub_title}>
                     DEPARTAMENTO
                   </div>
@@ -103,7 +105,8 @@ export default class Filter extends Component {
                       isChecked={this.state['department'] && this.state['department'].includes(n.toUpperCase()) || false}
                     />
                   )}
-                </div>
+                </div> 
+                */}
                 {/* price */}
                 <div className={styles.block}>
                   <div className={styles.sub_title}>

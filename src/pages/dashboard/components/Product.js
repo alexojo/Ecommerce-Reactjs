@@ -7,9 +7,9 @@ export default function Product({ title, color, price, image }) {
     <Card
       border="primary"
       className={`${styles.card} p-2`}
-      style={{ height: '100%' }}
+      style={{ height: '100%' },{border: 'solid 1px'}}
     >
-      <Card.Img className={styles.image} variant="top" src={image} />
+      <Card.Img className={styles.image} variant="top" src={image}/>
       <Card.Body>
         <Card.Title className={styles.title}>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
@@ -17,9 +17,6 @@ export default function Product({ title, color, price, image }) {
             {price}
           </div>
         </Card.Subtitle>
-        <Card.Text className={styles.color}>
-          {color}
-        </Card.Text>
       </Card.Body>
     </Card>
   )

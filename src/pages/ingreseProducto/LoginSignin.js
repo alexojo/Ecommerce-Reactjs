@@ -69,8 +69,8 @@ export default class LoginSignin extends Component {
     if (this.props.title === 'Registrar Producto') {
       
       //desestructurando los input
-      const {title, description, price, color, size, department, category } = this.inputText
-      this.props.submitAction(url, title, description, price, color, size, array_tags, Pregunta1, Pregunta2)////////////////////
+      const {title, description, price, color, size, department, category,cellphone } = this.inputText
+      this.props.submitAction(url, title, description, price, color, size, array_tags, Pregunta1, Pregunta2,cellphone)////////////////////
         .then(res => {
           //console.log(array_tags);
           //console.log(Pregunta1);

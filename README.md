@@ -4,7 +4,7 @@
 Elaborada por estudiantes de la escuela profesional de Ingeniería Informática y de Sistemas, de la Universidad Nacional de San Antonio Abad del Cusco.
 Para el curso de Ingeniería de Software I en el semestre 2020-II.
 
-#### back-end code [click here](https://github.com/UwUnsaac/Ecommerce-Nodejs)
+#### Código de back-end [click here](https://github.com/UwUnsaac/Ecommerce-Nodejs)
 
 ## Información general
 
@@ -19,7 +19,7 @@ back-end: Node.js, Express, Restful API, paypal-sdk, mongodb, mongoose, jwt(json
  <summary>dashboard</summary>
  <p>
    
-![dashboard_large](![image](https://user-images.githubusercontent.com/72516305/110693675-b0c9a200-81b5-11eb-9b21-ee0d40544a14.png))
+![dashboard_large](https://user-images.githubusercontent.com/72516305/110693675-b0c9a200-81b5-11eb-9b21-ee0d40544a14.png)
 
 </p>
 </details>

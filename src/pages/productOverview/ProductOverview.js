@@ -5,6 +5,8 @@ import Header from '../../components/header/headerContainer'
 import Variants from './components/Variants'
 import mergeProductAndVariants from './utils/mergeProductAndVariants'
 import jumpTo from '../../modules/Navigation'
+import InnerImageZoom from 'react-inner-image-zoom'
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 
 export default class ProductOverview extends Component {
   constructor(props) {
@@ -56,7 +58,7 @@ export default class ProductOverview extends Component {
             <div className={styles.content}>
               {/* left image */}
               <div className={styles.image}>
-                <img src={this.state.pic || this.props.product.imagePath} alt="" />
+                <InnerImageZoom  src={this.state.pic || this.props.product.imagePath} alt="" />
               </div>
               {/* right content box */}
               <div className={styles.context_outbox}>

@@ -19,7 +19,7 @@ back-end: Node.js, Express, Restful API, paypal-sdk, mongodb, mongoose, jwt(json
  <summary>dashboard</summary>
  <p>
    
-![dashboard_large](https://imgur.com/a/Qeh372H.jpg)
+![dashboard_large](![image](https://user-images.githubusercontent.com/72516305/110693675-b0c9a200-81b5-11eb-9b21-ee0d40544a14.png))
 
 </p>
 </details>

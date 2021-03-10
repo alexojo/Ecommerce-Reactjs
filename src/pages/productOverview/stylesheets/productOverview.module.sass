@@ -82,6 +82,24 @@
   button
     width: 45%
 
+.btn
+  width: 200px;
+  padding: 8px 0;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid #680d0f 
+  background: transparent;
+  color: #680d0f 
+  cursor: pointer;
+  outline: none
+
+  &:hover
+    color: white
+    background: #680d0f
+    border: none
+
+
 @include media-breakpoint-down(lg) 
   .content_box
     width: 90%
@@ -99,4 +117,4 @@
     .btn  
       font-size: 0.75rem
       width: 47%
-      padding: 0.25rem 0 
+      padding: 0.25rem 0

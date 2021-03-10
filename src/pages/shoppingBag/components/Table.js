@@ -42,7 +42,7 @@ export default function BagTable({ items, handleClick, props}) {
                 <div className={styles.id}>{items[id].item.cellphone}</div>
               </td>
               {/* price */}
-              <td>{items[id].price / items[id].qty}</td>
+              <td>{items[id].price}</td>
             </tr>
           ))}
         </tbody>

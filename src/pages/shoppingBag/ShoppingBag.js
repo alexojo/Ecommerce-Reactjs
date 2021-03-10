@@ -14,14 +14,14 @@ export default function ShoppingBag(props) {
       <Header />
       <div className={styles.box}>
         <div className={styles.content}>
-          <div className={styles.title.concat(" my-2")}>
+          <div onClick={()=>{console.log(items===undefined)}} className={styles.title.concat(" my-2")}>
             Favoritos
           </div>
           <div className={styles.table}>
-            <Table
+            {items===undefined?'Aun no has añadido nada a tu lista de favoritos 😒':<Table
               items={items || {}}
               handleClick={(pid, increase, decrease) => postCart(pid, increase, decrease)}
-            />
+            />}
           </div>
         </div>
       </div>

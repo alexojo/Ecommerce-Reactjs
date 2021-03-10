@@ -10,7 +10,7 @@ export default class AutoComplete extends Component {
   }
   handleChange = (e) => {
     const input = e.target.value
-    this.props.filter(input)
+    /* this.props.filter(input) */
     if(this.props.onChange){
       this.props.onChange(input)
     }

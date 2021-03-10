@@ -26,6 +26,7 @@ export default function Variants({ color, size, variants, selectedSize, handleCl
             sizes={size.split(",")}
             selectedSize={selectedSize}
             clickSize={clickSize}
+            
           />
         </div>
       </div>

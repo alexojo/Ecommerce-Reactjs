@@ -10,9 +10,9 @@ Para el curso de Ingeniería de Software I en el semestre 2020-II.
 
 front-end: Reactjs, Redux, Axios, Sass, react-bootstrap
 
-back-end: Node.js, Express, Restful API, paypal-sdk, mongodb, mongoose, jwt(jsonwebtoken), heroku
+back-end: Node.js, Express, Restful API, mongodb, mongoose, jwt(jsonwebtoken), heroku
 
-## snapshots
+## Capturas de pantalla de muestra
 
 
 <details>

@@ -120,13 +120,13 @@ export default class Header extends Component {
                     getAllProducts={getAllProducts}
                   />
                   <div className={styles.side_title}>
-                    CART
+                    FAVORITOS❤
                   </div>
                   <div
                     className={styles.side_content}
                     onClick={() => jumpTo('/bag')}
                   >
-                    Shopping Bag
+                    Favoritos
                   </div>
                   <div className={styles.side_title}>
                     USER

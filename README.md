@@ -1,15 +1,16 @@
 [![Build Status](https://travis-ci.com/UwUnsaac/Ecommerce-Reactjs.svg?branch=master)](https://travis-ci.com/UwUnsaac/Ecommerce-Reactjs)
 
-# Full stack ecommerce online store application
+# Aplicación fullstack de un catálogo para venta de productos online
+Elaborada por estudiantes de la escuela profesional de Ingeniería Informática y de Sistemas, de la Universidad Nacional de San Antonio Abad del Cusco.
+Para el curso de Ingeniería de Software I en el semestre 2020-II.
 
-#### Online demo link (please send me an email)
-#### back-end code [click here](https://github.com/levelopers/Ecommerce-Nodejs)
+#### back-end code [click here](https://github.com/UwUnsaac/Ecommerce-Nodejs)
 
-## General Info 
+## Información general
 
 front-end: Reactjs, Redux, Axios, Sass, react-bootstrap
 
-back-end: Node.js, Express, Restful API, paypal-sdk, mongodb, mongoose, jwt(jsonwebtoken), heroku, firebase, swaggerHub
+back-end: Node.js, Express, Restful API, paypal-sdk, mongodb, mongoose, jwt(jsonwebtoken), heroku
 
 ## snapshots
 
@@ -18,11 +19,8 @@ back-end: Node.js, Express, Restful API, paypal-sdk, mongodb, mongoose, jwt(json
  <summary>dashboard</summary>
  <p>
    
-![dashboard_large](https://user-images.githubusercontent.com/38830527/57897997-477ce000-7825-11e9-84f2-dcc66c7a378b.png)
-- - - - -
-side menu             |  dashboard
-:-------------------------:|:-------------------------:
-![side_menu_sm](https://user-images.githubusercontent.com/38830527/57898258-3e404300-7826-11e9-97dc-1475eaf95c70.png)  |  ![dashboard_sm](https://user-images.githubusercontent.com/38830527/57898213-0f29d180-7826-11e9-97cd-a19323b5d5cd.png)
+![dashboard_large](https://imgur.com/a/Qeh372H.jpg)
+
 </p>
 </details>
 

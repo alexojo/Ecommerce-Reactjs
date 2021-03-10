@@ -150,7 +150,7 @@ const Dropzone = (props) => {
                 onDrop={fileDrop}
             >
                 <img className={styles.imgupload} src={dropImageBg} alt='drop content' width="100px" height="100px"/>
-                <p>Arrastra la imagen de tu producto aquí</p>
+                <p>1️⃣ Arrastra la imagen de tu producto aquí</p>
             </div>
             <div className={styles.file_display_container}>
                 {selectedFile && (
@@ -176,7 +176,7 @@ const Dropzone = (props) => {
             <div className={styles.cont_button}>
                 
                 <button className={styles.upload_button} onClick={() => uploadFile()}>
-                    Subir Imagen
+                    2️⃣ Subir Imagen 
                 </button>
             </div>
             

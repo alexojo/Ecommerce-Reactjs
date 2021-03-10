@@ -38,18 +38,8 @@ const INPUT_CONFIG = [
   {
     title: "Número de Contacto",
     name: "cellphone",
-    ejemplo: "Ej. +51 934213123",
+    ejemplo: "Ej. 934213123 o 084222222",
   },
-  /*{
-    title: "Department",
-    name: "department",
-    ejemplo: "Ej. Mujer , Varon ó Niños",
-  },
-  {
-    title: "Hashtag",
-    name: "category",
-    ejemplo: "Ej. #algodon #invierno #covid-19",
-  },*/ 
 ]
 
 

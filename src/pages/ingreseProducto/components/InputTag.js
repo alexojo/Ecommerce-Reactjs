@@ -41,6 +41,7 @@ const TagsInput = (props) => {
 				type="text"
 				onKeyUp={event => event.key === "Enter" ? addTags(event) : null}
 				placeholder="Ingresa los tags de tu producto"
+	
 			/>		
 		</div>
 	);
@@ -50,7 +51,7 @@ const InputTag = () => {
 	const selectedTags = tags => {
 		console.log(tags);
 	};
-	const Tags=['varon','polo'];
+	const Tags=['tag'];
 	return (
         
 		<div className={styles.contenedor}>

@@ -8,7 +8,7 @@ export default function UserHeader({ user_token }) {
   return (
     <div className={styles.outbox}>
       <div className={styles.tag} onClick={() => jumpTo('/bag')}>
-        CART
+        FAVORITOS❤
       </div>
       {(user_token && Object.keys(user_token).length > 0)
         ?

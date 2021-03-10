@@ -14,31 +14,37 @@ const INPUT_CONFIG = [
     title: "Nombre",
     name: "title",
     ejemplo: "Ingresa el nombre de tu producto",
+    validations: [validateExistence]
   },
   {
     title: "Descripcion",
     name: "description",
     ejemplo: "Ingresa la descripción de tu producto",
+    validations: [validateExistence]
   },
   {
     title: "Tallas",
     name: "size",
     ejemplo: "Ej. M, L, XL",
+    validations: [validateExistence]
   },
   {
     title: "Precio",
     name: "price",
     ejemplo: "Ej. 25.00 ",
+    validations: [validateExistence]
   },
   {
     title: "Color",
     name: "color",
     ejemplo: "Ej. Azul",
+    validations: [validateExistence]
   },
   {
     title: "Número de Contacto",
     name: "cellphone",
     ejemplo: "Ej. 934213123 o 084222222",
+    validations: [validateExistence]
   },
 ]
 

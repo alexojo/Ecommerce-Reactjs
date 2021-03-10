@@ -4,7 +4,7 @@
 Elaborada por estudiantes de la escuela profesional de Ingeniería Informática y de Sistemas, de la Universidad Nacional de San Antonio Abad del Cusco.
 Para el curso de Ingeniería de Software I en el semestre 2020-II.
 
-#### Código de back-end [click here](https://github.com/UwUnsaac/Ecommerce-Nodejs)
+#### Código de back-end [aquí](https://github.com/UwUnsaac/Ecommerce-Nodejs)
 
 ## Información general
 
